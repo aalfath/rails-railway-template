@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "steps": {
+    "install": {
+      "variables": {
+        "BUNDLE_WITHOUT": "development:test"
+      }
+    },
+    "build": {
+      "variables": {
+        "BUNDLE_WITHOUT": "development:test",
+        "RAILS_ENV": "production",
+        "SECRET_KEY_BASE_DUMMY": "1"
+      }
+    }
+  },
+  "deploy": {
+    "variables": {
+      "BUNDLE_WITHOUT": "development:test",
+      "RAILS_ENV": "production",
+      "SOLID_QUEUE_IN_PUMA": "true",
+      "LANG": "en_US.UTF-8"
+    }
+  }
+}
