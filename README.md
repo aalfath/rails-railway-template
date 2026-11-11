@@ -66,7 +66,7 @@ bin/rubocop
 bin/brakeman
 ```
 
-`bin/ci` runs the full set, and the same checks run on GitHub Actions (`.github/workflows/ci.yml`).
+`bin/ci` runs the full set, and the same checks run on GitHub Actions (`.github/workflows/ci.yml`). There are no system (browser) tests yet. When you add some under `test/system`, run them with `bin/rails test:system`.
 
 ## Secrets
 
